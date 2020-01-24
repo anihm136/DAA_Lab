@@ -1,0 +1,10 @@
+The file contains 3 functions, which perform the following operations:
+  1.Search for the first occurrence of an element in an array
+  2.Search for the last occurrence of an element in an array
+  3.Count number of occurrence of given element in array
+
+1. Search for first occurrence is performed by simple linear search, iterating through all the elements of the array until the specified element is found, and the index is returned. If not found, -1 is returned.
+
+2. Search for last element is implemented by keeping track of the last occurrence of the specified element. After the whole array is iterated through, the last index is returned. If not found, -1 is returned.
+
+3. Count is performed by maintaining a counter variable, which is incremented each time the specified element is encountered while iterating through the array. The count is returned in the end.

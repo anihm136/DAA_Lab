@@ -1,0 +1,17 @@
+The file contains 5 functions, which perform the following operations:
+  1.Search for the first occurrence of a pattern in a string
+  1.Search for the last occurrence of a pattern in a string
+  3.Count number of occurrence of given pattern in string
+  4.Find the longest prefix length matched in pattern
+  5.Find the number of characters compared in matching all occurrence of pattern
+
+1. Search for first occurrence is performed by naive string matching, iterating through all the characters of the text upto the point where the remaining suffix length is shorter than the pattern. For each character, the corresponding characters of the pattern is checked until the entire pattern is matched, or one character does not match. The index of the first match is returned, and -1 is returned if no matches are found.
+
+2. Search for last element is implemented by keeping track of the start index of the last match of the pattern. After the whole text is iterated through, the last index is returned. If not found, -1 is returned
+
+3. Count is performed by maintaining a counter variable, which is incremented each time the pattern is matched in the string. The count is returned in the end.
+
+4. Longest prefix is implemented by maintaining the current longest prefix in a variable, initially set to 0. During matching, if the match length is greater than the current longest matched prefix, the variable is updated, and finally returned.
+
+5. Number of characters compared is maintained in a counter variable, which is incremented in the inner loop every time a character of the text and pattern are compared, and returned in the end.
+

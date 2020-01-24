@@ -1,0 +1,25 @@
+The file contains 8 functions:
+  1.isSorted
+  2.bubblePass
+  3.bubbleSort
+  4.numPasses
+  5.maxIndex
+  6.swapWithMax
+  7.selectionSort
+  8.numSwaps
+
+1. isSorted verifies if a given array is sorted, by linearly traversing through the array. It returns 0 if it encounters an element whose next element is smaller than it, and returns 1 if it traverses the entire array without such an instance.
+
+2. bubblePass performs one pass of the bubbleSort algorithm, swapping an element with its next neighbor if it is greater than the neighbor.
+
+3. bubbleSort performs at most n passes of bubblePass, checking if the array is sorted after every pass.
+
+4. numPasses performs bubbleSort, and maintains a counter on the number of bubblePasses performed, which is returned in the end.
+
+5. maxIndex returns the index of the max element, by maintaining the current max and maxindex in a variable and checking for higher elements linearly.
+
+6. swapWithMax swaps the max element with the last element of the array.
+
+7. selectionSort performs at most n passes of swapWithMax, checking every pass if the array is sorted.
+
+8. numSwaps keeps a counter to count the number of swaps performed during selectionSort, and returns it in the end.
